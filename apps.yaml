@@ -1,0 +1,48 @@
+stateHandler:
+  class: StateHandler
+  module: state
+StateMachineHandler:
+  class: StateMachineHandler
+  module: state
+announce:
+  class: Announce
+  module: announce
+earlymorning:
+  class: EarlyMorning
+  constrain_days: mon,tue,wed,thu,fri
+  module: 8am
+googlehome:
+  class: GoogleHome
+  module: google_home
+garage:
+  class: Garage
+  module: garage
+lights:
+  class: LightsatNight
+  module: lights
+night:
+  class: Night
+  constrain_days: mon,tue,wed,thu,fri
+  module: 8am
+scheduler:
+  class: Scheduler
+  module: scheduler
+timescheduler:
+  class: TimeScheduler
+  module: timescheduler
+utils:
+  class: utils
+  module: utils
+actions:
+  class: Actions
+  module: google_home
+
+error_notifier:
+  module: error_notifier
+  class: ErrorNotifier
+  path_to_errorlog: /home/homeassistant/.homeassistant/appdaemon.log
+  refresh_interval: 5
+
+join:
+  class: Join
+  module: joincommand
