@@ -1,13 +1,9 @@
 AppDaemon:
-  app_dir: /home/homeassistant/.homeassistant/apps
-  errorfile: /home/homeassistant/.homeassistant/appdaemon.log
-  logfile: /home/homeassistant/.homeassistant/appdaemon.log
+  app_dir: apps
+  errorfile: appdaemon.log
+  logfile: appdaemon.log
   threads: '50'
   api_port: 8080
 HASS:
   ha_key: homepi123
   ha_url: https://jarvispi.duckdns.org
-
-HADashboard:
-  dash_url: http://192.168.1.100:5050
-  dash_dir: /home/homeassistant/.homeassistant/apps/dashboards
