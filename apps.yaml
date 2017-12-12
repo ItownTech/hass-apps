@@ -38,3 +38,6 @@ error:
   class : ErrorNotifier
   path_to_errorlog : !secret logfile
   refresh_interval : 5
+telegram:
+  class: TelegramBotEventListener
+  module: telegrambot
