@@ -1,6 +1,6 @@
 AppDaemon:
-  errorfile: ./appdaemon.log
-  logfile: ./appdaemon.log
+  errorfile: !secret logfile
+  logfile: !secret logfile
   threads: '50'
   api_port: 8080
 HASS:

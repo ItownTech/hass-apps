@@ -36,5 +36,5 @@ join:
 error:
   module: errornotifier
   class : ErrorNotifier
-  path_to_errorlog : appdaemon.log
+  path_to_errorlog : !secret logfile
   refresh_interval : 5
