@@ -1,9 +1,8 @@
 AppDaemon:
-  app_dir: ./apps
-  errorfile: ./appdaemon.log
-  logfile: ./appdaemon.log
+  errorfile: /home/pi/hass-apps/appdaemon.log
+  logfile: /home/pi/hass-apps/appdaemon.log
   threads: '50'
   api_port: 8080
 HASS:
-  ha_key: homepi123
-  ha_url: https://jarvispi.duckdns.org
+  ha_key: !secret home_assistant_key
+  ha_url: !secret home_assistant_url
