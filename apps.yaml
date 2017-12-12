@@ -33,3 +33,8 @@ utils:
 join:
   class: Join
   module: joincommand
+error:
+  module: errornotifier
+  class : ErrorNotifier
+  path_to_errorlog : appdaemon.log
+  refresh_interval : 5

@@ -1,6 +1,6 @@
 AppDaemon:
-  errorfile: /home/pi/hass-apps/appdaemon.log
-  logfile: /home/pi/hass-apps/appdaemon.log
+  errorfile: ./appdaemon.log
+  logfile: ./appdaemon.log
   threads: '50'
   api_port: 8080
 HASS:
