@@ -7,7 +7,7 @@ earlymorning:
   module: 8am
 actions:
   class: Actions
-  module: google_home
+  module: actions
 googlehome:
   class: GoogleHome
   module: google_home
