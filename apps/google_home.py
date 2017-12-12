@@ -5,6 +5,7 @@ class GoogleHome(appapi.AppDaemon):
         self.log("Hello from Google Home")
         self.register_endpoint(self.api_call)
         self.actions=self.get_app("actions")
+        self.log(self.actions)
     def api_call(self,data):
         intent=self.get_apiai_intent(data).lower()
         if "." in intent:
