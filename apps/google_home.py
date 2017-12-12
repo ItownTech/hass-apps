@@ -45,7 +45,8 @@ class Actions(appapi.AppDaemon):
     def input_unknown(self):
         return "Oh!,I didnt understand that"
 
-    def getdevicestatus(self,device):
+    def getdevicestatus(self,**kwargs):
+        device=kwargs['device']
         try:
             entity_id=self.friendly_names[device.lower()]
         except KeyError:
