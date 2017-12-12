@@ -47,3 +47,5 @@ class ErrorNotifier(appapi.AppDaemon):
             title="[AppDaemon] Something went wrong! :(",
             message=("On {}, we found at least one new error in the error log!\nYou should go check to"
                      "see what went wrong.".format(pretty_timestamp)))
+
+        self.call_service('notify/telegram',title="AppDaemon",message="Something went wrong in AppDaemon")
