@@ -5,5 +5,5 @@ AppDaemon:
   threads: '50'
   api_port: 8080
 HASS:
-  ha_key: homepi123
+  ha_key: <redacted>
   ha_url: https://jarvispi.duckdns.org
